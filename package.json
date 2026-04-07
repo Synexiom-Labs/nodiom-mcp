@@ -1,0 +1,48 @@
+{
+  "name": "@synexiom-labs/nodiom-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for nodiom — structured read/write access to Markdown documents for AI agents.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "markdown",
+    "ast",
+    "ai-agent",
+    "llm",
+    "claude",
+    "nodiom",
+    "structured-content"
+  ],
+  "author": "Synexiom Labs Inc.",
+  "license": "MIT",
+  "homepage": "https://github.com/Synexiom-Labs/nodiom-mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Synexiom-Labs/nodiom-mcp.git"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "nodiom-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "node --loader ts-node/esm src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.0",
+    "@synexiom-labs/nodiom": "^0.1.1",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
