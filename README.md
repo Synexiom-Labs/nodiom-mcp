@@ -171,4 +171,4 @@ Claude will use `nodiom_tree` to understand the structure, `nodiom_read_list` to
 
 ## License
 
-MIT — [Synexiom Labs Inc.](https://synexiom.com)
+MIT — [Synexiom Labs Inc.](https://synexiomlabs.com)
