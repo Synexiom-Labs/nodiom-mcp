@@ -46,8 +46,10 @@ Add to your `claude_desktop_config.json`:
 ### Claude Code
 
 ```bash
-claude mcp add nodiom -- npx -y @synexiom-labs/nodiom-mcp
+claude mcp add -s user nodiom -- npx -y @synexiom-labs/nodiom-mcp
 ```
+
+The `-s user` flag registers the server globally across all your projects. Without it, the server is only active when Claude Code's working directory matches the project where you ran the command.
 
 ### Any MCP client (stdio transport)
 
